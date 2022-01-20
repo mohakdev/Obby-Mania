@@ -19,6 +19,7 @@ public class CheckpointScript : MonoBehaviour
             {
                 CurrentLevel = NextLevel;
                 PlayerPrefs.SetInt("Level", CurrentLevel);
+                Debug.Log($"Current Level = {CurrentLevel}");
             }
         }
     }
