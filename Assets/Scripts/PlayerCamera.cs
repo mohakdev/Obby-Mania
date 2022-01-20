@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float sensitivity = 100f;
+    public float sensitivity;
     public Transform PlayerBody;
     float xRotation = 0f;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        sensitivity = PlayerPrefs.GetFloat("Sens", 100);
     }
 
 
