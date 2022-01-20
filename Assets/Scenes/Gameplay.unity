@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 335619516}
   - component: {fileID: 335619518}
   - component: {fileID: 335619519}
+  - component: {fileID: 335619520}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -520,6 +521,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a74cdbed5bcf2424ca2eeb39c35fc8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &335619520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335619515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7322d47a70892954a8fc00433a2988ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &364641366
@@ -620,6 +633,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 100
   PlayerBody: {fileID: 335619517}
+--- !u!1 &777578927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777578929}
+  - component: {fileID: 777578928}
+  m_Layer: 0
+  m_Name: ResetPlayerPos
+  m_TagString: Border
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &777578928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777578927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 152.97, y: 2.41, z: 1000}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &777578929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777578927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -53.1, y: 1, z: 380}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &827615693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,8 +1203,8 @@ GameObject:
   - component: {fileID: 1196584084}
   - component: {fileID: 1196584083}
   m_Layer: 6
-  m_Name: FinishPart
-  m_TagString: Untagged
+  m_Name: 1
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1514,8 +1571,8 @@ GameObject:
   - component: {fileID: 1680657247}
   - component: {fileID: 1680657246}
   m_Layer: 6
-  m_Name: FinishPart (1)
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
